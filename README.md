@@ -4,7 +4,7 @@
 
 Welcome to **Eagle Byte**, a premium web and application development firm founded by **Kartik Parmar**. We specialize in crafting high-performance digital solutions that help businesses innovate, scale, and succeed.
 
-![Eagle Byte Banner](Client/public/og-image.png)
+![Eagle Byte Banner](Client/public/LOGO.jpeg)
 
 ## 🌟 Who We Are
 
