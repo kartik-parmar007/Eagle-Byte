@@ -68,7 +68,7 @@ const Admin = () => {
                 }
 
                 // Optionally verify token validity by making a request to a protected endpoint
-                const response = await fetch('https://codecrest-r6qp.onrender.com/api/contact', {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -109,7 +109,7 @@ const Admin = () => {
     const fetchContacts = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch('https://codecrest-r6qp.onrender.com/api/contact', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -149,7 +149,7 @@ const Admin = () => {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`https://codecrest-r6qp.onrender.com/api/contact/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`
