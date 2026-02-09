@@ -6,6 +6,7 @@ import { useToast } from '@/hooks/use-toast';
 import { motion } from 'framer-motion';
 import { LogOut, Trash2 } from 'lucide-react';
 import { jwtDecode } from 'jwt-decode';
+import { io } from 'socket.io-client';
 
 interface ContactMessage {
     _id: string;
@@ -105,6 +106,28 @@ const Admin = () => {
 
         checkAuth();
     }, [navigate, toast]);
+
+    // Socket.io effect for real-time updates
+    useEffect(() => {
+        const socket = io(import.meta.env.VITE_API_URL);
+
+        socket.on('connect', () => {
+            console.log('Connected to socket server');
+        });
+
+        socket.on('newContact', (newContact: ContactMessage) => {
+            setContacts((prevContacts) => [newContact, ...prevContacts]);
+            toast({
+                title: "New Contact Message",
+                description: `From ${newContact.fullName}`,
+                duration: 5000,
+            });
+        });
+
+        return () => {
+            socket.disconnect();
+        };
+    }, [toast]);
 
     const fetchContacts = async () => {
         try {

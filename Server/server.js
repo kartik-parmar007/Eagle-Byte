@@ -28,7 +28,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to MongoDB with simplified options
-const dbUrl = process.env.DB_URL || "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/CodeCrest?retryWrites=true&w=majority&appName=Kartik";
+const dbUrl = process.env.DB_URL || "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/EagleByte?retryWrites=true&w=majority&appName=Kartik";
 
 // Only connect if we aren't already connected/connecting
 if (mongoose.connection.readyState === 0) {
@@ -56,4 +56,21 @@ app.use('/api/portal', authRoutes);
 app.use('/api/contact', contactRoutes);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Socket.io setup
+const { Server } = require("socket.io");
+const io = new Server(server, {
+  cors: corsOptions // reusing the cors options defined above
+});
+
+io.on('connection', (socket) => {
+  console.log('A user connected: ' + socket.id);
+  
+  socket.on('disconnect', () => {
+    console.log('User disconnected: ' + socket.id);
+  });
+});
+
+// Make io accessible to our router
+app.set('socketio', io);

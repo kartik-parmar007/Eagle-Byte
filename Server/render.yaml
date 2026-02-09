@@ -2,7 +2,7 @@
   "services": [
     {
       "type": "web",
-      "name": "codecrest-server",
+      "name": "eagle-byte-server",
       "env": "node",
       "plan": "free",
       "buildCommand": "npm install",

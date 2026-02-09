@@ -247,43 +247,7 @@ const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Stats with counting animation */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-3 gap-8 mt-20 max-w-lg mx-auto"
-          >
-            {[
-              { number: '50+', label: 'Projects' },
-              { number: '30+', label: 'Happy Clients' },
-              { number: '3+', label: 'Years Experience' },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                className="text-center"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 + index * 0.2 }}
-                whileHover={{ scale: 1.1, y: -5 }}
-              >
-                <motion.div
-                  className="text-3xl md:text-4xl font-display font-bold text-gradient"
-                  animate={{
-                    textShadow: [
-                      '0 0 10px hsl(var(--primary) / 0.3)',
-                      '0 0 20px hsl(var(--primary) / 0.5)',
-                      '0 0 10px hsl(var(--primary) / 0.3)',
-                    ]
-                  }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  {stat.number}
-                </motion.div>
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
+
         </div>
       </motion.div>
 

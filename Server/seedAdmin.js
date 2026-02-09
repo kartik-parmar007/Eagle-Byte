@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const dbUrl = process.env.DB_URL || "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/CodeCrest?retryWrites=true&w=majority&appName=Kartik";
+const dbUrl = process.env.DB_URL || "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/EagleByte?retryWrites=true&w=majority&appName=Kartik";
 
 mongoose.connect(dbUrl)
   .then(async () => {

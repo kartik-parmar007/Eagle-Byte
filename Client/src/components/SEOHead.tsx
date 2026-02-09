@@ -13,7 +13,7 @@ interface SEOHeadProps {
 const SEOHead = ({
   title,
   description,
-  keywords = "Eagle Byte, EagleByte, eagle byt, Eagle Byt, Kartik Parmar, web development, website developer India, app development, e-commerce, custom software, Gujarat developer",
+  keywords = "Eagle Byte, EagleByte, Eagle Byte Agency, Kartik Parmar, Kartik Parmar Developer, web development company India, custom software development, React developer Gujarat, MERN stack developer, freelance web developer India",
   canonicalUrl,
   ogImage = "/og-image.png",
   ogType = "website",
@@ -26,26 +26,34 @@ const SEOHead = ({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Eagle Byte",
+    "alternateName": "EagleByte",
     "url": siteUrl,
     "logo": `${siteUrl}/LOGO.jpeg`,
     "founder": {
       "@type": "Person",
       "name": "Kartik Parmar",
       "jobTitle": "Founder & Lead Developer",
-      "email": "kartikparmar.dev@gmail.com"
+      "url": "https://www.linkedin.com/in/kartik-parmar-/",
+      "sameAs": [
+        "https://github.com/kartik-parmar007",
+        "https://www.linkedin.com/in/kartik-parmar-/"
+      ]
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-9773405142",
       "contactType": "customer service",
-      "email": "kartikparmar.dev@gmail.com"
+      "email": "kartikparmar.dev@gmail.com",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi", "Gujarati"]
     },
     "sameAs": [
-      "https://linkedin.com/in/kartikparmar"
+      "https://www.linkedin.com/in/kartik-parmar-/",
+      "https://github.com/kartik-parmar007"
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "India",
+      "addressCountry": "IN",
       "addressRegion": "Gujarat"
     }
   };

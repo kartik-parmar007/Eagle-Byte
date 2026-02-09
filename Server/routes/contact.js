@@ -37,6 +37,12 @@ router.post('/', async (req, res) => {
     const newContact = new Contact(req.body);
     const savedContact = await newContact.save();
     
+    // Emit socket event for real-time update
+    const io = req.app.get('socketio');
+    if (io) {
+      io.emit('newContact', savedContact);
+    }
+
     logInfo({ action: 'Contact Saved', id: savedContact._id });
     res.status(201).json(savedContact);
   } catch (err) {

@@ -6,7 +6,7 @@ const clientOptions = {
   family: 4 // Force IPv4
 };
 
-const dbUrl = "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/CodeCrest?retryWrites=true&w=majority&appName=Kartik";
+const dbUrl = "mongodb+srv://admin2000:Karan54321@kartik.btjjy4d.mongodb.net/EagleByte?retryWrites=true&w=majority&appName=Kartik";
 
 console.log("Attempting to connect to:", dbUrl);
 

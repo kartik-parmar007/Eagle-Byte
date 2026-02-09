@@ -29,7 +29,7 @@ const faqs = [
     answer: 'Yes, we believe in building long-term partnerships. We offer comprehensive maintenance and support packages that include security monitoring, performance optimization, content updates, and technical troubleshooting. We ensure your digital platform remains secure, up-to-date, and fully functional 24/7.',
   },
   {
-    question: 'Does CodeCrest handle SEO and performance?',
+    question: 'Does Eagle Byte handle SEO and performance?',
     answer: 'Absolutely. Performance and SEO are at the core of our development philosophy. Every website and application we build is optimized for speed, mobile responsiveness, and search engine visibility. We implement technical SEO best practices, schema markup, and core web vitals optimization to ensure your site ranks well and converts visitors.',
   },
 ];

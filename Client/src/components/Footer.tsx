@@ -39,6 +39,15 @@ const Footer = () => {
               >
                 <Linkedin size={18} />
               </a>
+              <a
+                href="https://github.com/kartik-parmar007"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                aria-label="Github"
+              >
+                <Github size={18} />
+              </a>
             </div>
           </div>
 
