@@ -20,7 +20,7 @@ const SEOHead = ({
   structuredData,
 }: SEOHeadProps) => {
   const fullTitle = `${title} | Eagle Byte - Web & App Development`;
-  const siteUrl = "https://eaglebyte.dev";
+  const siteUrl = "https://www.eaglebyte.in";
 
   const defaultStructuredData = {
     "@context": "https://schema.org",

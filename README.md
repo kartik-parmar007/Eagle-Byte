@@ -6,7 +6,7 @@ Welcome to **Eagle Byte**, a premium web and application development firm founde
 
 ![Eagle Byte Banner](Client/public/LOGO.jpeg)
 
-## 🌟 Who We Are
+## 🌟 Who We Are    
 
 At **Eagle Byte**, we don't just write code; we build digital experiences. Based in Gujarat, India, and serving clients globally, our team combines technical expertise with creative vision to solve complex business challenges.
 

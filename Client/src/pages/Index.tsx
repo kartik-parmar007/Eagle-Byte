@@ -12,11 +12,11 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Eagle Byte",
-    "url": "https://eaglebyte.dev",
+    "url": "https://www.eaglebyte.in",
     "description": "Eagle Byte - Premium web and app development services by Kartik Parmar. We build powerful websites and applications that drive business growth.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://eaglebyte.dev/search?q={search_term_string}",
+      "target": "https://www.eaglebyte.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
