@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     question: 'What services does Eagle Byte offer?',
-    answer: 'Eagle Byte offers a premium suite of digital services including Website Development, Agentic AI & Automation Systems, E-commerce Solutions, Custom Software Development, and robust Backend & System Architecture. We are experts in building high-performance, scalable web applications and converting legacy systems into modern, responsive digital assets.',
+    answer: 'Eagle Byte offers a premium suite of digital services including Website Development and Agentic AI & Automation Systems. We are experts in building high-performance, scalable websites and converting legacy systems into modern, intelligent digital assets.',
   },
   {
     question: 'Who is Kartik Parmar?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'How long does it take to complete a project?',
-    answer: 'Project timelines vary based on complexity and scope. A standard professional website typically takes 2-4 weeks, while complex web applications, e-commerce stores, or AI automation systems usually range from 4-12 weeks. We follow an agile development process to ensure timely delivery and regular updates throughout the project lifecycle.',
+    answer: 'Project timelines vary based on complexity and scope. A standard professional website typically takes 2-4 weeks, while complex AI automation systems usually range from 4-12 weeks. We follow an agile development process to ensure timely delivery and regular updates throughout the project lifecycle.',
   },
   {
     question: 'What is your pricing structure?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: 'Does Eagle Byte handle SEO and performance?',
-    answer: 'Absolutely. Performance and SEO are at the core of our development philosophy. Every website and application we build is optimized for speed, mobile responsiveness, and search engine visibility. We implement technical SEO best practices, schema markup, and core web vitals optimization to ensure your site ranks well and converts visitors.',
+    answer: 'Absolutely. Performance and SEO are at the core of our development philosophy. Every website and AI system we build is optimized for speed, mobile responsiveness, and search engine visibility. We implement technical SEO best practices, schema markup, and core web vitals optimization to ensure your site ranks well and converts visitors.',
   },
 ];
 

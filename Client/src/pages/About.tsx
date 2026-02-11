@@ -41,7 +41,7 @@ const About = () => {
         "email": "kartikparmar.dev@gmail.com"
       },
       "foundingDate": "2021",
-      "description": "Eagle Byte is a premium web and app development company founded by Kartik Parmar, dedicated to turning ideas into digital reality.",
+      "description": "Eagle Byte is a premium website and Agentic AI development company founded by Kartik Parmar, dedicated to turning ideas into digital reality.",
     }
   };
 
@@ -49,7 +49,7 @@ const About = () => {
     <Layout>
       <SEOHead
         title="About Us"
-        description="Learn about Eagle Byte, founded by Kartik Parmar. We are a premier web development company in India, dedicated to building powerful digital solutions for businesses worldwide."
+        description="Learn about Eagle Byte, founded by Kartik Parmar. We are a premier website and AI development company in India, dedicated to building powerful digital solutions for businesses worldwide."
         keywords="About Eagle Byte, Kartik Parmar, web developer India, software company Gujarat, development team"
         canonicalUrl="/about"
         structuredData={structuredData}
@@ -95,7 +95,7 @@ const About = () => {
                   Based in Gujarat, India, we have successfully delivered projects for clients across the global, from startups to established enterprises. Our commitment to quality, innovation, and client satisfaction has been the cornerstone of our growth.
                 </p>
                 <p>
-                  Today, Eagle Byte stands as a trusted partner for businesses looking to establish or enhance their digital presence. We specialize in creating websites and applications that not only look stunning but also perform exceptionally well.
+                  Today, Eagle Byte stands as a trusted partner for businesses looking to establish or enhance their digital presence. We specialize in creating websites and intelligent AI systems that not only look stunning but also perform exceptionally well.
                 </p>
               </div>
             </motion.div>

@@ -5,17 +5,8 @@ import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
 import {
   Globe,
-  Smartphone,
-  ShoppingCart,
   Cpu,
-  Code,
-  Database,
-  Cloud,
-  Shield,
-  Palette,
-  Search,
   Zap,
-  Users,
 } from 'lucide-react';
 
 const services = [
@@ -29,7 +20,7 @@ const services = [
       'SEO',
       'Performance',
       'CMS',
-      'Support',
+      'E-commerce Integration',
     ],
   },
   {
@@ -43,54 +34,6 @@ const services = [
       'Custom Workflows',
       'API Integration',
       'Intelligent Bots',
-    ],
-  },
-  {
-    icon: ShoppingCart,
-    title: 'E-commerce Solutions',
-    description: 'Secure and scalable online stores tailored to your business needs.',
-    features: [
-      'Payment Integration',
-      'Inventory Management',
-      'Order Tracking',
-      'Multi-vendor Support',
-      'Analytics Dashboard',
-    ],
-  },
-  {
-    icon: Code,
-    title: 'Custom Software Development',
-    description: 'Tailored business platforms and SaaS systems aimed at growth.',
-    features: [
-      'Web Applications',
-      'Enterprise Systems',
-      'SaaS Development',
-      'Third-party Integrations',
-      'Ongoing Support',
-    ],
-  },
-  {
-    icon: Database,
-    title: 'Backend & System Architecture',
-    description: 'Secure and scalable backend systems to power your applications.',
-    features: [
-      'Robust APIs',
-      'Database Design',
-      'Cloud Infrastructure',
-      'Microservices',
-      'Security Implementation',
-    ],
-  },
-  {
-    icon: Cloud,
-    title: 'Full Stack Solutions',
-    description: 'End-to-end development covering both client-side and server-side architecture.',
-    features: [
-      'MERN / Next.js Stack',
-      'Real-time Applications',
-      'Interactive UI/UX',
-      'Serverless Functions',
-      'DevOps & Deployment',
     ],
   },
 ];
@@ -140,8 +83,8 @@ const Services = () => {
     <Layout>
       <SEOHead
         title="Services"
-        description="Eagle Byte offers comprehensive web development services including website development, app development, e-commerce solutions, automation systems, and custom software. Get expert solutions from Kartik Parmar's team."
-        keywords="web development services, app development, e-commerce development, automation, custom software, Eagle Byte services, Kartik Parmar"
+        description="Eagle Byte offers premium website development and Agentic AI automation systems. Get expert solutions from Kartik Parmar's team."
+        keywords="website development, Agentic AI, AI automation, Eagle Byte services, Kartik Parmar"
         canonicalUrl="/services"
         structuredData={structuredData}
       />

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Globe, Cpu, Code, ArrowRight, ShoppingCart, Database, Cloud } from 'lucide-react';
+import { Globe, Cpu, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -15,30 +15,6 @@ const services = [
     title: 'Agentic AI & Automation',
     description: 'Smart AI agents, CRM integration, and automated workflows to streamline operations.',
     color: 'secondary',
-  },
-  {
-    icon: ShoppingCart,
-    title: 'E-commerce Solutions',
-    description: 'Secure and scalable online stores with payment integration and inventory management.',
-    color: 'accent',
-  },
-  {
-    icon: Code,
-    title: 'Custom Software',
-    description: 'Tailored business platforms, SaaS systems, and enterprise-grade web applications.',
-    color: 'primary',
-  },
-  {
-    icon: Database,
-    title: 'Backend Architecture',
-    description: 'Robust APIs, cloud infrastructure, and microservices for secure and scalable systems.',
-    color: 'secondary',
-  },
-  {
-    icon: Cloud,
-    title: 'Full Stack Solutions',
-    description: 'End-to-end development with MERN stack, Next.js, and serverless architecture.',
-    color: 'accent',
   },
 ];
 

@@ -26,7 +26,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-muted-foreground">
-              Turning ideas into digital reality. We build powerful websites and apps that drive business growth.
+              Turning ideas into digital reality. We build powerful websites and intelligent AI systems that drive business growth.
             </p>
             <div className="flex gap-4">
 

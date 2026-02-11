@@ -213,7 +213,7 @@ const HeroSection = () => {
           >
             Eagle Byte – Turning Ideas into Digital Reality.
             <br className="hidden md:block" />
-            Premium web development services from India.
+            Premium website and Agentic AI development services from India.
           </motion.p>
 
           {/* CTA Buttons with micro-interactions */}

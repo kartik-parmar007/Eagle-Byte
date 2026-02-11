@@ -13,13 +13,13 @@ interface SEOHeadProps {
 const SEOHead = ({
   title,
   description,
-  keywords = "Eagle Byte, EagleByte, Eagle Byte Agency, Kartik Parmar, Kartik Parmar Developer, web development company India, custom software development, React developer Gujarat, MERN stack developer, freelance web developer India",
+  keywords = "Eagle Byte, EagleByte, Eagle Byte Agency, Kartik Parmar, Kartik Parmar Developer, website development, Agentic AI, AI automation, React developer Gujarat, freelance web developer India",
   canonicalUrl,
   ogImage = "/og-image.png",
   ogType = "website",
   structuredData,
 }: SEOHeadProps) => {
-  const fullTitle = `${title} | Eagle Byte - Web & App Development`;
+  const fullTitle = `${title} | Eagle Byte - Website & Agentic AI Development`;
   const siteUrl = "https://www.eaglebyte.in";
 
   const defaultStructuredData = {
