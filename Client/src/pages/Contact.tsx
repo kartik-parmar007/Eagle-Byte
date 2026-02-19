@@ -109,9 +109,9 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Contact"
-        description="Get in touch with Eagle Byte for your website and Agentic AI development needs. Contact Kartik Parmar for a free consultation and quote. Phone: +91 9773405142"
-        keywords="contact Eagle Byte, hire web developer, web development quote, Kartik Parmar contact, developer India"
+        title="Contact Kartik Parmar - Founder"
+        description="Directly contact Kartik Parmar, Founder of Eagle Byte. Get a free consultation for your Agentic AI or website development project. Call +91 9773405142."
+        keywords="Contact Kartik Parmar, Kartik Parmar Email, Kartik Parmar Phone Number, Hire Kartik Parmar, Eagle Byte Contact"
         canonicalUrl="/contact"
         structuredData={structuredData}
       />

@@ -13,7 +13,7 @@ interface SEOHeadProps {
 const SEOHead = ({
   title,
   description,
-  keywords = "Eagle Byte, EagleByte, Eagle Byte Agency, Kartik Parmar, Kartik Parmar Developer, website development, Agentic AI, AI automation, React developer Gujarat, freelance web developer India",
+  keywords = "Kartik Parmar, Founder of Eagle Byte, Kartik Parmar Eagle Byte, Kartik Parmar Developer, Kartik Parmar India, Eagle Byte Founder, Agentic AI, AI automation, Website Development, React developer Gujarat",
   canonicalUrl,
   ogImage = "/og-image.png",
   ogType = "website",
@@ -22,41 +22,61 @@ const SEOHead = ({
   const fullTitle = `${title} | Eagle Byte - Website & Agentic AI Development`;
   const siteUrl = "https://www.eaglebyte.in";
 
-  const defaultStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Eagle Byte",
-    "alternateName": "EagleByte",
-    "url": siteUrl,
-    "logo": `${siteUrl}/LOGO.jpeg`,
-    "founder": {
-      "@type": "Person",
-      "name": "Kartik Parmar",
-      "jobTitle": "Founder & Lead Developer",
-      "url": "https://www.linkedin.com/in/kartik-parmar-/",
-      "sameAs": [
-        "https://github.com/kartik-parmar007",
-        "https://www.linkedin.com/in/kartik-parmar-/"
-      ]
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9773405142",
-      "contactType": "customer service",
-      "email": "kartikparmar.dev@gmail.com",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi", "Gujarati"]
+  const personSchema = {
+    "@type": "Person",
+    "name": "Kartik Parmar",
+    "jobTitle": "Founder & Lead Developer",
+    "url": "https://www.eaglebyte.in",
+    "image": `${siteUrl}/Kartik%20Parmar.jpeg`,
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Eagle Byte"
     },
     "sameAs": [
-      "https://www.linkedin.com/in/kartik-parmar-/",
-      "https://github.com/kartik-parmar007"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "IN",
-      "addressRegion": "Gujarat"
-    }
+      "https://github.com/kartik-parmar007",
+      "https://www.linkedin.com/in/kartik-parmar-/"
+    ]
   };
+
+  const defaultStructuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Eagle Byte",
+        "alternateName": "EagleByte",
+        "url": siteUrl,
+        "logo": `${siteUrl}/LOGO.jpeg`,
+        "founder": {
+          "@type": "Person",
+          "name": "Kartik Parmar"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9773405142",
+          "contactType": "customer service",
+          "email": "kartikparmar.dev@gmail.com",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi", "Gujarati"]
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/kartik-parmar-/",
+          "https://github.com/kartik-parmar007"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN",
+          "addressRegion": "Gujarat"
+        }
+      },
+      personSchema
+    ]
+  };
+
+  // If custom structured data is passed, wrap it in a graph if it's not already, or merge it.
+  // For simplicity, if structuredData is passed, we use it. If it's an array, we assume it's a graph.
+  // Actually, let's just use the default if none is provided, or the provided one.
+  const finalStructuredData = structuredData || defaultStructuredData;
 
   return (
     <Helmet>
@@ -68,7 +88,7 @@ const SEOHead = ({
       <meta name="author" content="Kartik Parmar" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
+      <meta name="revisit-after" content="2 days" />
 
       {/* Canonical URL */}
       {canonicalUrl && <link rel="canonical" href={`${siteUrl}${canonicalUrl}`} />}
@@ -95,7 +115,7 @@ const SEOHead = ({
 
       {/* Structured Data */}
       <script type="application/ld+json">
-        {JSON.stringify(structuredData || defaultStructuredData)}
+        {JSON.stringify(finalStructuredData)}
       </script>
     </Helmet>
   );

@@ -82,9 +82,9 @@ const Services = () => {
   return (
     <Layout>
       <SEOHead
-        title="Services"
-        description="Eagle Byte offers premium website development and Agentic AI automation systems. Get expert solutions from Kartik Parmar's team."
-        keywords="website development, Agentic AI, AI automation, Eagle Byte services, Kartik Parmar"
+        title="Services by Kartik Parmar"
+        description="Explore top-tier services by Kartik Parmar and Eagle Byte: Agentic AI Solutions, Custom Website Development, and Digital Transformation."
+        keywords="Kartik Parmar Services, Agentic AI Kartik Parmar, Web Development Kartik Parmar, Eagle Byte Services"
         canonicalUrl="/services"
         structuredData={structuredData}
       />

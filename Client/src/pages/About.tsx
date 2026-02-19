@@ -48,9 +48,9 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About Us"
-        description="Learn about Eagle Byte, founded by Kartik Parmar. We are a premier website and AI development company in India, dedicated to building powerful digital solutions for businesses worldwide."
-        keywords="About Eagle Byte, Kartik Parmar, web developer India, software company Gujarat, development team"
+        title="About Kartik Parmar & Eagle Byte"
+        description="Kartik Parmar is the Founder and Lead Developer at Eagle Byte. Learn about his vision for Agentic AI and premium website development services in India."
+        keywords="About Kartik Parmar, Kartik Parmar Profile, Founder of Eagle Byte, Kartik Parmar Developer, Eagle Byte Team"
         canonicalUrl="/about"
         structuredData={structuredData}
       />

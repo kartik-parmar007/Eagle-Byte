@@ -24,9 +24,9 @@ const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="Home"
-        description="Eagle Byte - Premium website and Agentic AI development services in India. Founded by Kartik Parmar. We build powerful websites and intelligent AI systems that drive business growth."
-        keywords="Eagle Byte, EagleByte, eagle byt, Eagle Byt, Kartik Parmar, web development India, website developer Gujarat, Agentic AI, AI automation, best web development company India"
+        title="Kartik Parmar - Founder of Eagle Byte"
+        description="Kartik Parmar, Founder of Eagle Byte, delivers premium Agentic AI and website development services. Contact Kartik for innovative digital solutions in India."
+        keywords="Kartik Parmar, Founder of Eagle Byte, Kartik Parmar Eagle Byte, Is Kartik Parmar Founder of Eagle Byte, Kartik Parmar India, Kartik Parmar Web Developer, Agentic AI, AI automation"
         canonicalUrl="/"
         structuredData={structuredData}
       />
